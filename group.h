@@ -105,7 +105,7 @@ public:
 	}
 	
 	void print() {
-		for (size_t i = 0; i < size(); i++)
+		for (uint32_t i = 0; i < size(); i++)
 			printf("%p\n", mGroupList[i]);
 	}
 	
