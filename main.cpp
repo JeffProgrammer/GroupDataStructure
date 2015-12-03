@@ -68,6 +68,13 @@ int main() {
 	for (const auto obj : g) {
 		printf("Value is %d\n", static_cast<Obj*>(obj)->getValue());
 	}
+
+	// test operator overloading
+	printf("Testing operator overloading...\n");
+	for (unsigned int i = 0; i < g.size(); i++) {
+		Obj *obj = static_cast<Obj*>(g[i]);
+		printf("Value is %d\n", static_cast<Obj*>(obj)->getValue());
+	}
 	
 	// print out the group
 	printf("G:\n");
