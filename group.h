@@ -24,6 +24,7 @@
 #ifndef _GROUP_H_
 #define _GROUP_H_
 
+#include <assert.h>
 #include <stdint.h>
 #include <vector>
 
@@ -107,6 +108,12 @@ public:
 	void print() {
 		for (uint32_t i = 0; i < size(); i++)
 			printf("%p\n", mGroupList[i]);
+	}
+
+	IGroupable* operator[](int32_t index) {
+		// ensure we are within bounds.
+		assert(!(index < 0 || index >= static_cast<int32_t>(size())));
+		return mGroupList[index];
 	}
 	
 private:
