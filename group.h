@@ -24,6 +24,7 @@
 #ifndef _GROUP_H_
 #define _GROUP_H_
 
+#include <stdint.h>
 #include <vector>
 
 class Group;
