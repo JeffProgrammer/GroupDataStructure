@@ -31,11 +31,15 @@
 class Group;
 
 class IGroupable {
+	// give access to group so it can use mGroup field
+	friend class Group;
+
 public:
 	IGroupable();
 	
 	~IGroupable();
 	
+protected:
 	Group *mGroup;
 };
 
