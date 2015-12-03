@@ -83,8 +83,8 @@ public:
 		return std::find(mGroupList.begin(), mGroupList.end(), obj) != mGroupList.end();
 	}
 	
-	size_t size() const {
-		return mGroupList.size();
+	uint32_t size() const {
+		return static_cast<uint32_t>(mGroupList.size());
 	}
 	
 	std::vector<IGroupable*>::iterator begin() {
