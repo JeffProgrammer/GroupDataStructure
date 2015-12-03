@@ -56,6 +56,7 @@ int main() {
 	g.add(obj0);
 	g.add(obj1);
 	g.add(obj2);
+	g.add(obj3);
 	
 	// test a foreach loop to see if iterators work
 	printf("Testing iterators...\n");
