@@ -30,6 +30,4 @@ IGroupable::IGroupable() {
 IGroupable::~IGroupable() {
 	if (mGroup != nullptr)
 		mGroup->remove(this);
-
-	printf("Deleting %p...\n", this);
 }
