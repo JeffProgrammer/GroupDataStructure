@@ -4,7 +4,10 @@ A data structure that requires objects to only be in 1 group at a time. Also man
 # Compiler support
 Since this makes use of C++11 iterators in the tester, you should use a C++11 compiler.
 
-Tested with MSVC 2015, but no specific windows or msvc code was used.
+Tested on:
+
+* MSVC 2015
+* Apple LLVM version 7.0.0
 
 # License
 
